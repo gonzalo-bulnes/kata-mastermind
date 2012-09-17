@@ -1,9 +1,9 @@
 Mastermind Kata
 ===============
 
-This _kata_ is decribed in [The RSpec Book: Behaviour Driven Development with Rspec, Cucumber, and Friends][The RSpec Book] by David Chelimsky _and al._.
+This _kata_ is described in [The RSpec Book: Behaviour Driven Development with Rspec, Cucumber, and Friends][The RSpec Book] by David Chelimsky _and al._.
 
-It aims at applying the <abbr title="Behaviour-Driven Development">BDD</abbr> using Cucumber and RSpec to write a Mastermind game in Ruby.
+It aims at applying the <abbr title="Behaviour-Driven Development">BDD</abbr> principles using Cucumber and RSpec to write a Mastermind game in Ruby.
 
   [The RSpec Book]: http://pragprog.com/book/achbd/the-rspec-book
 
@@ -17,7 +17,7 @@ I use [RVM][RVM] to keep _kata_ environments separated from each others. In my o
 	cd kata-mastermind
 	rvm --rvmrc --create 1.9.3-head@kata-mastermind
 
-	# Verify the .rvmrc file is detected, and authorize RVM to use it
+	# Verify that the .rvmrc file is detected, and authorize RVM to use it
 	# to determine which version of Ruby and which gemset it should use.
 	cd ..
 	cd kata-mastermind
@@ -53,7 +53,7 @@ First install bundler:
 	cd kata-mastermind
 	gem install bundler
 
-Given you install it from the project directory and you created a `.rvmrc` file in the previous section RVM will ensure that Bundler will be installed into your project _gemset_.
+Given you install it from the project directory and you created a `.rvmrc` file in the previous section, RVM will ensure that Bundler will be installed into your project _gemset_.
 Create a `Gemfile` in the :
 
 	# kata-mastermind/Gemfile
@@ -62,7 +62,7 @@ Create a `Gemfile` in the :
 	gem "cucumber"
 	gem "rspec"
 
-And finally run install your bundle:
+And finally install your bundle:
 
 	bundle install
 

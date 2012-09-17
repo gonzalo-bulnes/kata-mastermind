@@ -18,9 +18,8 @@ Feature: code-breaker submits guess
     Scenarios: all colors correct
       | code    | guess   | mark |
       | r g y c | r g y c | bbbb |
-      | r g y c | r g c y | bbbw |
-      | r g y c | y r g c | bbww |
-      | r g y c | r g y c | bwww |
+      | r g y c | r g c y | bbww |
+      | r g y c | y r g c | bwww |
       | r g y c | c r g y | wwww |
 
     Scenarios: 3 colors correct

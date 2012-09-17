@@ -70,3 +70,14 @@ And finally run install your bundle:
 	Your bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.
 
   [Bundler]: http://gembundler.com/
+
+Tips
+----
+
+### Running RSpec
+
+To enable colors and make RSpec to output a description of the passing steps, use:
+
+	rspec --color --format documentation
+
+See also `rspec --help`.

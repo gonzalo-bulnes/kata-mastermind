@@ -9,15 +9,11 @@ module Mastermind
       end
       it "should send a welcome message" do
         @messenger.should_receive(:puts).with("Welcome to Mastermind!")
-        @game.start
-      end
-      it "should send a welcome message (passing the code to start)" do
-        @messenger.should_receive(:puts).with("Welcome to Mastermind!")
         @game.start(%w[r g y c])
       end
       it "should prompt for the first guess" do
         @messenger.should_receive(:puts).with("Enter guess:")
-        @game.start
+        @game.start(%w[r g y c])
       end
     end
   end

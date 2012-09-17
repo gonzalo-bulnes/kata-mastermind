@@ -4,7 +4,7 @@ end
 When /^I start a new game$/ do
   @messenger = StringIO.new
   game = Mastermind::Game.new(@messenger)
-  game.start
+  game.start(%w[r g y c])
 end
 
 Then /^the game should say "(.*)"$/ do |message|

@@ -46,6 +46,18 @@ module Mastermind
           @game.guess(%w[y r g c])
         end
       end
+      context "with duplicates in the guess that match a peg in the code" do
+        context "by color and position" do
+          it "should add a single b to the mark" do
+            pending "requires some preliminary refactoring"
+            @game.start(%w[r y g c])
+
+            @messenger.should_receive(:puts).with("bbb")
+
+            @game.guess(%w[r y g g])
+          end
+        end
+      end
     end
   end
 end
